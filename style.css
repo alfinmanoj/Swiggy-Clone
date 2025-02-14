@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/** Navbar Section **/
+.navbar {
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/** Main Navigation Container **/
+.navbar .nav {
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Left Section **/
+.nav .left {
+    display: flex;
+    align-items: center;
+}
+
+.nav .left .logo {
+    display: block;
+    height: 42px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left .logo:hover {
+    transform: scale(1.1);
+}
+
+/** Location Section **/
+.navbar .location-div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.location-div .other {
+    font-weight: 700;
+    color: #3d4152;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #3d4152;
+}
+
+.location-div .other:hover {
+    color: #fc8019;
+    border-bottom: 2px solid #fc8019;
+}
+
+.location-div .location {
+    font-weight: 400;
+    padding-left: 6px;
+    margin-left: 6px;
+    color: #686b78;
+}
+
+.location-div .arrow-down {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #fc8019;
+    font-weight: 700;
+}
+
+/** Right Section **/
+.nav .right {
+    display: flex;
+    align-items: center;
+}
+
+.right .items {
+    display: flex;
+    align-items: center;
+}
+
+.right .items li {
+    list-style: none;
+    margin-right: 36px;
+    font-size: 16px;
+    color: #3d4152;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right .items li:last-child {
+    margin-right: 0;
+}
+
+.items .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.items .nav-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+}
+
+.items .nav-item a:hover {
+    color: #fc8019;
+}
+
+.nav-item a span {
+    padding-left: 10px;
+}
