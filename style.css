@@ -178,6 +178,98 @@
 
 .filters div:hover {
     border-bottom: 2px solid #282c3f;
-    
 }
 
+
+/*Restaurent list section*/
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 80px;
+    perspective: 1000px; /* Adds depth effect */
+}
+
+.restaurant-list .place-link {
+    background: #fff;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transform-origin: center;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.place-link:hover {
+    transform: scale(0.95) rotateX(3deg); /* Moves backward slightly */
+    box-shadow: none; /* Removes shadow on hover */
+}
+
+.place-link .card-item {
+    padding: 12px;
+}
+
+.item-content {
+    width: 100%;
+    position: relative;
+}
+
+.top-image {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    border-radius: 12px 12px 12px 12px;
+    overflow: hidden;
+}
+
+.top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offers {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.ratings {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+
+.icon-star {
+    margin-right: 5px; /* Space between the star icon and the ratings */
+}
+
+/* Description section */
+.restaurant-card-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.location {
+    font-size: 16px;
+}
